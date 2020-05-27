@@ -1,0 +1,1751 @@
+2020-05-27 11:16:39,374 INFO  - ------------------Scenario Check the latest foreign exchange rates Started---------------------
+2020-05-27 11:16:40,290 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:40,533 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:16:42,208 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:16:42,209 DEBUG - Auth cache not set in the context
+2020-05-27 11:16:42,209 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:16:42,209 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:16:42,210 DEBUG - Attempt 1 to execute request
+2020-05-27 11:16:42,210 DEBUG - Sending request: GET /api/latest HTTP/1.1
+2020-05-27 11:16:42,210 DEBUG -  >> "GET /api/latest HTTP/1.1[\r][\n]"
+2020-05-27 11:16:42,210 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:16:42,210 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:16:42,210 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:16:42,211 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:16:42,211 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:16:42,211 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:16:42,211 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:16:42,211 DEBUG - >> GET /api/latest HTTP/1.1
+2020-05-27 11:16:42,211 DEBUG - >> Accept: */*
+2020-05-27 11:16:42,211 DEBUG - >> Content-Length: 0
+2020-05-27 11:16:42,211 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:16:42,211 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:16:42,211 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:16:42,211 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:16:42,472 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:16:42,478 DEBUG -  << "Date: Wed, 27 May 2020 05:47:06 GMT[\r][\n]"
+2020-05-27 11:16:42,478 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:16:42,478 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:16:42,479 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:16:42,479 DEBUG -  << "Set-Cookie: __cfduid=d2c20b5f4270af6f8f739ae9dcfb95c081590558426; expires=Fri, 26-Jun-20 05:47:06 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:16:42,479 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:16:42,479 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:16:42,479 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:16:42,479 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:16:42,480 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:16:42,482 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:16:42,482 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:16:42,483 DEBUG -  << "Age: 3543[\r][\n]"
+2020-05-27 11:16:42,483 DEBUG -  << "cf-request-id: 02f6449e3b00006b77c2916200000001[\r][\n]"
+2020-05-27 11:16:42,483 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:16:42,483 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:16:42,483 DEBUG -  << "CF-RAY: 599d7076cf256b77-LHR[\r][\n]"
+2020-05-27 11:16:42,483 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:42,484 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:16:42,484 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:16:42,484 DEBUG - << Date: Wed, 27 May 2020 05:47:06 GMT
+2020-05-27 11:16:42,485 DEBUG - << Content-Type: application/json
+2020-05-27 11:16:42,485 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:16:42,485 DEBUG - << Connection: keep-alive
+2020-05-27 11:16:42,485 DEBUG - << Set-Cookie: __cfduid=d2c20b5f4270af6f8f739ae9dcfb95c081590558426; expires=Fri, 26-Jun-20 05:47:06 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:16:42,485 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:16:42,485 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:16:42,485 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:16:42,485 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:16:42,485 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:16:42,485 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:16:42,485 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:16:42,485 DEBUG - << Age: 3543
+2020-05-27 11:16:42,486 DEBUG - << cf-request-id: 02f6449e3b00006b77c2916200000001
+2020-05-27 11:16:42,486 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:16:42,486 DEBUG - << Server: cloudflare
+2020-05-27 11:16:42,486 DEBUG - << CF-RAY: 599d7076cf256b77-LHR
+2020-05-27 11:16:42,500 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:16:42,517 DEBUG - Parsing response as: application/json
+2020-05-27 11:16:42,517 DEBUG -  << "13d[\r][\n]"
+2020-05-27 11:16:42,517 DEBUG -  << "[0x1f]"
+2020-05-27 11:16:42,517 DEBUG -  << "[0x8b]"
+2020-05-27 11:16:42,517 DEBUG -  << "[0x8]"
+2020-05-27 11:16:42,517 DEBUG -  << "[0x0]"
+2020-05-27 11:16:42,518 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:16:42,518 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:16:42,548 INFO  - ------------------Scenario Validate the foreign exchange rate for past date Started---------------------
+2020-05-27 11:16:42,554 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:42,554 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:16:43,496 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:16:43,496 DEBUG - Auth cache not set in the context
+2020-05-27 11:16:43,496 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:16:43,496 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:16:43,496 DEBUG - Attempt 1 to execute request
+2020-05-27 11:16:43,496 DEBUG - Sending request: GET /api/2010-01-12 HTTP/1.1
+2020-05-27 11:16:43,496 DEBUG -  >> "GET /api/2010-01-12 HTTP/1.1[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:16:43,496 DEBUG - >> GET /api/2010-01-12 HTTP/1.1
+2020-05-27 11:16:43,496 DEBUG - >> Accept: */*
+2020-05-27 11:16:43,496 DEBUG - >> Content-Length: 0
+2020-05-27 11:16:43,496 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:16:43,496 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:16:43,496 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:16:43,496 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:16:43,677 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:16:43,677 DEBUG -  << "Date: Wed, 27 May 2020 05:47:07 GMT[\r][\n]"
+2020-05-27 11:16:43,678 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:16:43,678 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:16:43,678 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:16:43,678 DEBUG -  << "Set-Cookie: __cfduid=d13cf9b37f8effd5307cf8173489155f41590558427; expires=Fri, 26-Jun-20 05:47:07 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:16:43,678 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:16:43,679 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:16:43,679 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:16:43,679 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:16:43,679 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:16:43,679 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:16:43,680 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:16:43,680 DEBUG -  << "Age: 5832[\r][\n]"
+2020-05-27 11:16:43,680 DEBUG -  << "cf-request-id: 02f644a3450000e620578ac200000001[\r][\n]"
+2020-05-27 11:16:43,680 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:16:43,681 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:16:43,681 DEBUG -  << "CF-RAY: 599d707ede8ce620-LHR[\r][\n]"
+2020-05-27 11:16:43,681 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:43,681 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:16:43,682 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:16:43,682 DEBUG - << Date: Wed, 27 May 2020 05:47:07 GMT
+2020-05-27 11:16:43,682 DEBUG - << Content-Type: application/json
+2020-05-27 11:16:43,682 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:16:43,682 DEBUG - << Connection: keep-alive
+2020-05-27 11:16:43,682 DEBUG - << Set-Cookie: __cfduid=d13cf9b37f8effd5307cf8173489155f41590558427; expires=Fri, 26-Jun-20 05:47:07 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:16:43,683 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:16:43,683 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:16:43,683 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:16:43,683 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:16:43,683 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:16:43,683 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:16:43,684 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:16:43,684 DEBUG - << Age: 5832
+2020-05-27 11:16:43,684 DEBUG - << cf-request-id: 02f644a3450000e620578ac200000001
+2020-05-27 11:16:43,684 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:16:43,684 DEBUG - << Server: cloudflare
+2020-05-27 11:16:43,684 DEBUG - << CF-RAY: 599d707ede8ce620-LHR
+2020-05-27 11:16:43,685 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:16:43,686 DEBUG - Parsing response as: application/json
+2020-05-27 11:16:43,686 DEBUG -  << "14b[\r][\n]"
+2020-05-27 11:16:43,686 DEBUG -  << "[0x1f]"
+2020-05-27 11:16:43,686 DEBUG -  << "[0x8b]"
+2020-05-27 11:16:43,687 DEBUG -  << "[0x8]"
+2020-05-27 11:16:43,687 DEBUG -  << "[0x0]"
+2020-05-27 11:16:43,687 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:16:43,687 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:16:43,701 INFO  - ------------------Scenario Validate latest foreign exchange rates with base and symbol Started---------------------
+2020-05-27 11:16:43,714 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:43,714 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:16:44,817 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:16:44,817 DEBUG - Auth cache not set in the context
+2020-05-27 11:16:44,817 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:16:44,818 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:16:44,818 DEBUG - Attempt 1 to execute request
+2020-05-27 11:16:44,818 DEBUG - Sending request: GET /api/latest?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:16:44,818 DEBUG -  >> "GET /api/latest?base=USD&symbols=EUR HTTP/1.1[\r][\n]"
+2020-05-27 11:16:44,819 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:16:44,819 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:16:44,819 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:16:44,819 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:16:44,819 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:16:44,820 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:16:44,820 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:16:44,820 DEBUG - >> GET /api/latest?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:16:44,820 DEBUG - >> Accept: */*
+2020-05-27 11:16:44,820 DEBUG - >> Content-Length: 0
+2020-05-27 11:16:44,820 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:16:44,821 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:16:44,821 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:16:44,821 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:16:45,118 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:16:45,119 DEBUG -  << "Date: Wed, 27 May 2020 05:47:09 GMT[\r][\n]"
+2020-05-27 11:16:45,119 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:16:45,119 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:16:45,120 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:16:45,120 DEBUG -  << "Set-Cookie: __cfduid=d148dbc6c92740ab80a968c133bc401011590558429; expires=Fri, 26-Jun-20 05:47:09 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:16:45,120 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:16:45,120 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Age: 5833[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "cf-request-id: 02f644a86d0000e6a0892bf200000001[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "CF-RAY: 599d70871bb1e6a0-LHR[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:45,121 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:16:45,121 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:16:45,121 DEBUG - << Date: Wed, 27 May 2020 05:47:09 GMT
+2020-05-27 11:16:45,121 DEBUG - << Content-Type: application/json
+2020-05-27 11:16:45,121 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:16:45,121 DEBUG - << Connection: keep-alive
+2020-05-27 11:16:45,121 DEBUG - << Set-Cookie: __cfduid=d148dbc6c92740ab80a968c133bc401011590558429; expires=Fri, 26-Jun-20 05:47:09 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:16:45,121 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:16:45,122 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:16:45,122 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:16:45,122 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:16:45,122 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:16:45,122 DEBUG - << Age: 5833
+2020-05-27 11:16:45,122 DEBUG - << cf-request-id: 02f644a86d0000e6a0892bf200000001
+2020-05-27 11:16:45,122 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:16:45,122 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:16:45,122 DEBUG - << Server: cloudflare
+2020-05-27 11:16:45,122 DEBUG - << CF-RAY: 599d70871bb1e6a0-LHR
+2020-05-27 11:16:45,122 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:16:45,122 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:16:45,122 DEBUG - Parsing response as: application/json
+2020-05-27 11:16:45,123 DEBUG -  << "51[\r][\n]"
+2020-05-27 11:16:45,123 DEBUG -  << "[0x1f]"
+2020-05-27 11:16:45,123 DEBUG -  << "[0x8b]"
+2020-05-27 11:16:45,123 DEBUG -  << "[0x8]"
+2020-05-27 11:16:45,123 DEBUG -  << "[0x0]"
+2020-05-27 11:16:45,123 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:16:45,123 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:16:45,131 INFO  - ------------------Scenario Validate latest foreign exchange rates with base and symbol Started---------------------
+2020-05-27 11:16:45,141 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:45,141 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:16:49,179 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:16:49,180 DEBUG - Auth cache not set in the context
+2020-05-27 11:16:49,180 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:16:49,180 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:16:49,180 DEBUG - Attempt 1 to execute request
+2020-05-27 11:16:49,180 DEBUG - Sending request: GET /api/latest?base=INR&symbols=INR HTTP/1.1
+2020-05-27 11:16:49,180 DEBUG -  >> "GET /api/latest?base=INR&symbols=INR HTTP/1.1[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:16:49,180 DEBUG - >> GET /api/latest?base=INR&symbols=INR HTTP/1.1
+2020-05-27 11:16:49,180 DEBUG - >> Accept: */*
+2020-05-27 11:16:49,180 DEBUG - >> Content-Length: 0
+2020-05-27 11:16:49,180 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:16:49,180 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:16:49,180 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:16:49,180 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:16:49,401 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:16:49,402 DEBUG -  << "Date: Wed, 27 May 2020 05:47:13 GMT[\r][\n]"
+2020-05-27 11:16:49,402 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:16:49,402 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:16:49,402 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:16:49,403 DEBUG -  << "Set-Cookie: __cfduid=db1a8582a8f5adf88efef83bb64b5d9391590558433; expires=Fri, 26-Jun-20 05:47:13 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:16:49,403 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:16:49,403 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:16:49,403 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:16:49,403 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:16:49,403 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:16:49,404 DEBUG -  << "Age: 5836[\r][\n]"
+2020-05-27 11:16:49,404 DEBUG -  << "cf-request-id: 02f644b96e000006a685256200000001[\r][\n]"
+2020-05-27 11:16:49,404 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:16:49,404 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:16:49,404 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:16:49,405 DEBUG -  << "CF-RAY: 599d70a24f6c06a6-LHR[\r][\n]"
+2020-05-27 11:16:49,405 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:16:49,405 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:49,405 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:16:49,405 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:16:49,405 DEBUG - << Date: Wed, 27 May 2020 05:47:13 GMT
+2020-05-27 11:16:49,406 DEBUG - << Content-Type: application/json
+2020-05-27 11:16:49,406 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:16:49,406 DEBUG - << Connection: keep-alive
+2020-05-27 11:16:49,406 DEBUG - << Set-Cookie: __cfduid=db1a8582a8f5adf88efef83bb64b5d9391590558433; expires=Fri, 26-Jun-20 05:47:13 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:16:49,406 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:16:49,406 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:16:49,406 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:16:49,406 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:16:49,407 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:16:49,407 DEBUG - << Age: 5836
+2020-05-27 11:16:49,407 DEBUG - << cf-request-id: 02f644b96e000006a685256200000001
+2020-05-27 11:16:49,407 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:16:49,407 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:16:49,407 DEBUG - << Server: cloudflare
+2020-05-27 11:16:49,407 DEBUG - << CF-RAY: 599d70a24f6c06a6-LHR
+2020-05-27 11:16:49,408 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:16:49,408 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:16:49,409 DEBUG - Parsing response as: application/json
+2020-05-27 11:16:49,409 DEBUG -  << "44[\r][\n]"
+2020-05-27 11:16:49,410 DEBUG -  << "[0x1f]"
+2020-05-27 11:16:49,410 DEBUG -  << "[0x8b]"
+2020-05-27 11:16:49,410 DEBUG -  << "[0x8]"
+2020-05-27 11:16:49,410 DEBUG -  << "[0x0]"
+2020-05-27 11:16:49,410 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:16:49,411 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:16:49,427 INFO  - ------------------Scenario Validate the foreign exchange rate with base and symbol for past date Started---------------------
+2020-05-27 11:16:49,435 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:49,436 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:16:50,162 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:16:50,162 DEBUG - Auth cache not set in the context
+2020-05-27 11:16:50,162 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:16:50,162 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:16:50,162 DEBUG - Attempt 1 to execute request
+2020-05-27 11:16:50,162 DEBUG - Sending request: GET /api/2010-01-12?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:16:50,162 DEBUG -  >> "GET /api/2010-01-12?base=USD&symbols=EUR HTTP/1.1[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:16:50,162 DEBUG - >> GET /api/2010-01-12?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:16:50,162 DEBUG - >> Accept: */*
+2020-05-27 11:16:50,162 DEBUG - >> Content-Length: 0
+2020-05-27 11:16:50,162 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:16:50,162 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:16:50,162 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:16:50,162 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:16:50,333 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:16:50,333 DEBUG -  << "Date: Wed, 27 May 2020 05:47:14 GMT[\r][\n]"
+2020-05-27 11:16:50,333 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:16:50,333 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:16:50,333 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "Set-Cookie: __cfduid=dcd1e3ddb94c148245ae663acc52bf9181590558434; expires=Fri, 26-Jun-20 05:47:14 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:16:50,334 DEBUG -  << "Age: 5836[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "cf-request-id: 02f644bd52000000522db4d200000001[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "CF-RAY: 599d70a88fb50052-LHR[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:16:50,335 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:50,336 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:16:50,336 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:16:50,336 DEBUG - << Date: Wed, 27 May 2020 05:47:14 GMT
+2020-05-27 11:16:50,336 DEBUG - << Content-Type: application/json
+2020-05-27 11:16:50,336 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:16:50,336 DEBUG - << Connection: keep-alive
+2020-05-27 11:16:50,336 DEBUG - << Set-Cookie: __cfduid=dcd1e3ddb94c148245ae663acc52bf9181590558434; expires=Fri, 26-Jun-20 05:47:14 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:16:50,336 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:16:50,336 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:16:50,336 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:16:50,337 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:16:50,337 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:16:50,337 DEBUG - << Age: 5836
+2020-05-27 11:16:50,337 DEBUG - << cf-request-id: 02f644bd52000000522db4d200000001
+2020-05-27 11:16:50,337 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:16:50,337 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:16:50,337 DEBUG - << Server: cloudflare
+2020-05-27 11:16:50,337 DEBUG - << CF-RAY: 599d70a88fb50052-LHR
+2020-05-27 11:16:50,337 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:16:50,338 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:16:50,338 DEBUG - Parsing response as: application/json
+2020-05-27 11:16:50,339 DEBUG -  << "51[\r][\n]"
+2020-05-27 11:16:50,339 DEBUG -  << "[0x1f]"
+2020-05-27 11:16:50,339 DEBUG -  << "[0x8b]"
+2020-05-27 11:16:50,339 DEBUG -  << "[0x8]"
+2020-05-27 11:16:50,339 DEBUG -  << "[0x0]"
+2020-05-27 11:16:50,339 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:16:50,339 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:16:50,370 DEBUG -  << "[0xab]VJJ,NU[0xb2]R[\n]"
+2020-05-27 11:16:50,370 DEBUG -  << "[\r]vQ[0xd2]Q*J,I-V[0xb2][0xaa]Vr[\r][\r]R[0xb2]2[0xd0]3[0xb3]40530011[0xaa][0xd5]QJI,[0x1][0xa9]4204[0xd0]50[0xd4]54R[0xaa][0x5][0x0]~UUs?[0x0][0x0][0x0]"
+2020-05-27 11:16:50,371 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:50,371 DEBUG -  << "0[\r][\n]"
+2020-05-27 11:16:50,371 DEBUG -  << "[\r][\n]"
+2020-05-27 11:16:50,371 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@bc0f53b
+2020-05-27 11:16:50,372 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:16:50,443 INFO  - ------------------Scenario Validate the foreign exchange rate with base and symbol for past date Started---------------------
+2020-05-27 11:16:50,450 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:50,450 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:16:59,420 DEBUG - Connection org.apache.http.impl.conn.DefaultClientConnection@3f49e266 closed
+2020-05-27 11:16:59,421 INFO  - I/O exception (java.net.SocketException) caught when connecting to {s}->https://api.ratesapi.io:443: Connection reset
+2020-05-27 11:16:59,421 DEBUG - Connection reset
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.security.ssl.InputRecord.readFully(Unknown Source)
+	at sun.security.ssl.InputRecord.read(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:553)
+	at org.apache.http.conn.ssl.SSLSocketFactory.connectSocket(SSLSocketFactory.java:412)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2028)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1434)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1221)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1631)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:166)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at stepDefination.RateStepDefinaton.user_submit_the_GET_request(RateStepDefinaton.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+2020-05-27 11:16:59,432 INFO  - Retrying connect to {s}->https://api.ratesapi.io:443
+2020-05-27 11:16:59,433 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:17:00,473 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:17:00,474 DEBUG - Auth cache not set in the context
+2020-05-27 11:17:00,474 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:17:00,474 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:17:00,474 DEBUG - Attempt 1 to execute request
+2020-05-27 11:17:00,474 DEBUG - Sending request: GET /api/2009-01-03?base=INR&symbols=USD HTTP/1.1
+2020-05-27 11:17:00,474 DEBUG -  >> "GET /api/2009-01-03?base=INR&symbols=USD HTTP/1.1[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:17:00,474 DEBUG - >> GET /api/2009-01-03?base=INR&symbols=USD HTTP/1.1
+2020-05-27 11:17:00,474 DEBUG - >> Accept: */*
+2020-05-27 11:17:00,474 DEBUG - >> Content-Length: 0
+2020-05-27 11:17:00,474 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:17:00,474 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:17:00,474 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:17:00,474 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:17:00,647 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:17:00,648 DEBUG -  << "Date: Wed, 27 May 2020 05:47:24 GMT[\r][\n]"
+2020-05-27 11:17:00,648 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:17:00,648 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:17:00,648 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Set-Cookie: __cfduid=d801324a70fa2d3fc699ad0cbcc26fdb41590558444; expires=Fri, 26-Jun-20 05:47:24 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Age: 5846[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "cf-request-id: 02f644e59f000036069590c200000001[\r][\n]"
+2020-05-27 11:17:00,649 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:17:00,650 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:17:00,650 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:17:00,650 DEBUG -  << "CF-RAY: 599d70e8fe6b3606-LHR[\r][\n]"
+2020-05-27 11:17:00,650 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:17:00,650 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:00,650 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:17:00,650 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:17:00,651 DEBUG - << Date: Wed, 27 May 2020 05:47:24 GMT
+2020-05-27 11:17:00,651 DEBUG - << Content-Type: application/json
+2020-05-27 11:17:00,651 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:17:00,651 DEBUG - << Connection: keep-alive
+2020-05-27 11:17:00,651 DEBUG - << Set-Cookie: __cfduid=d801324a70fa2d3fc699ad0cbcc26fdb41590558444; expires=Fri, 26-Jun-20 05:47:24 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:17:00,651 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:17:00,651 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:17:00,651 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:17:00,651 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:17:00,651 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:17:00,651 DEBUG - << Age: 5846
+2020-05-27 11:17:00,651 DEBUG - << cf-request-id: 02f644e59f000036069590c200000001
+2020-05-27 11:17:00,651 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:17:00,651 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:17:00,651 DEBUG - << Server: cloudflare
+2020-05-27 11:17:00,651 DEBUG - << CF-RAY: 599d70e8fe6b3606-LHR
+2020-05-27 11:17:00,652 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:17:00,652 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:00,653 DEBUG - Parsing response as: application/json
+2020-05-27 11:17:00,653 DEBUG -  << "51[\r][\n]"
+2020-05-27 11:17:00,653 DEBUG -  << "[0x1f]"
+2020-05-27 11:17:00,653 DEBUG -  << "[0x8b]"
+2020-05-27 11:17:00,653 DEBUG -  << "[0x8]"
+2020-05-27 11:17:00,653 DEBUG -  << "[0x0]"
+2020-05-27 11:17:00,653 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:17:00,653 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:17:00,656 DEBUG -  << "[0xab]VJJ,NU[0xb2]R[0xf2][0xf4][0xb]R[0xd2]Q*J,I-V[0xb2][0xaa]V[\n]"
+2020-05-27 11:17:00,656 DEBUG -  << "[\r]vQ[0xb2]2[0xd0]302035[0xb3][0xb4]06[0xaa][0xd5]QJI,[0x1][0xa9]420[0xb0][0xd4]50[0xd4]50R[0xaa][0x5][0x0][0xeb][0x1b][0xbe][0x9e]?[0x0][0x0][0x0]"
+2020-05-27 11:17:00,656 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:00,656 DEBUG -  << "0[\r][\n]"
+2020-05-27 11:17:00,656 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:00,656 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@128c502c
+2020-05-27 11:17:00,656 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:00,662 INFO  - ------------------Scenario Validate Api response for the invalid day Started---------------------
+2020-05-27 11:17:00,667 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:17:00,667 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:17:01,311 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:17:01,311 DEBUG - Auth cache not set in the context
+2020-05-27 11:17:01,312 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:17:01,312 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:17:01,312 DEBUG - Attempt 1 to execute request
+2020-05-27 11:17:01,312 DEBUG - Sending request: GET /api/2020-02-31 HTTP/1.1
+2020-05-27 11:17:01,312 DEBUG -  >> "GET /api/2020-02-31 HTTP/1.1[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:17:01,313 DEBUG - >> GET /api/2020-02-31 HTTP/1.1
+2020-05-27 11:17:01,314 DEBUG - >> Accept: */*
+2020-05-27 11:17:01,314 DEBUG - >> Content-Length: 0
+2020-05-27 11:17:01,314 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:17:01,314 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:17:01,314 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:17:01,314 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:17:01,586 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Date: Wed, 27 May 2020 05:47:25 GMT[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Content-Length: 41[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Set-Cookie: __cfduid=d1cb6a2599a6ead81116e4da1578e0e2f1590558445; expires=Fri, 26-Jun-20 05:47:25 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "cf-request-id: 02f644e8da0000071a50b40200000001[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "CF-RAY: 599d70ee2a63071a-LHR[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:01,586 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:17:01,586 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:17:01,586 DEBUG - << Date: Wed, 27 May 2020 05:47:25 GMT
+2020-05-27 11:17:01,586 DEBUG - << Content-Type: application/json
+2020-05-27 11:17:01,586 DEBUG - << Content-Length: 41
+2020-05-27 11:17:01,586 DEBUG - << Connection: keep-alive
+2020-05-27 11:17:01,586 DEBUG - << Set-Cookie: __cfduid=d1cb6a2599a6ead81116e4da1578e0e2f1590558445; expires=Fri, 26-Jun-20 05:47:25 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:17:01,586 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:17:01,586 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:17:01,587 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:17:01,587 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:17:01,587 DEBUG - << cf-request-id: 02f644e8da0000071a50b40200000001
+2020-05-27 11:17:01,587 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:17:01,587 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:17:01,587 DEBUG - << Server: cloudflare
+2020-05-27 11:17:01,587 DEBUG - << CF-RAY: 599d70ee2a63071a-LHR
+2020-05-27 11:17:01,587 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:01,587 DEBUG - Parsing response as: application/json
+2020-05-27 11:17:01,587 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:17:01,590 DEBUG -  << "{"error":"day is out of range for month"}"
+2020-05-27 11:17:01,590 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@47b179d7
+2020-05-27 11:17:01,590 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:01,796 INFO  - ------------------Scenario Validate Api response for the invalid month Started---------------------
+2020-05-27 11:17:01,804 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:17:01,804 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:17:02,948 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:17:02,948 DEBUG - Auth cache not set in the context
+2020-05-27 11:17:02,948 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:17:02,949 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:17:02,949 DEBUG - Attempt 1 to execute request
+2020-05-27 11:17:02,949 DEBUG - Sending request: GET /api/2020-13-31 HTTP/1.1
+2020-05-27 11:17:02,949 DEBUG -  >> "GET /api/2020-13-31 HTTP/1.1[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:17:02,949 DEBUG - >> GET /api/2020-13-31 HTTP/1.1
+2020-05-27 11:17:02,950 DEBUG - >> Accept: */*
+2020-05-27 11:17:02,950 DEBUG - >> Content-Length: 0
+2020-05-27 11:17:02,950 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:17:02,950 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:17:02,950 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:17:02,950 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:17:03,704 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Date: Wed, 27 May 2020 05:47:27 GMT[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Content-Length: 67[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Set-Cookie: __cfduid=d1615b7565f3f94f16e056015ebd865441590558447; expires=Fri, 26-Jun-20 05:47:27 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:17:03,705 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "cf-request-id: 02f644ef5a0000063d1b1a7200000001[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "CF-RAY: 599d70f89d12063d-LHR[\r][\n]"
+2020-05-27 11:17:03,706 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:03,707 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:17:03,707 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:17:03,707 DEBUG - << Date: Wed, 27 May 2020 05:47:27 GMT
+2020-05-27 11:17:03,707 DEBUG - << Content-Type: application/json
+2020-05-27 11:17:03,707 DEBUG - << Content-Length: 67
+2020-05-27 11:17:03,707 DEBUG - << Connection: keep-alive
+2020-05-27 11:17:03,707 DEBUG - << Set-Cookie: __cfduid=d1615b7565f3f94f16e056015ebd865441590558447; expires=Fri, 26-Jun-20 05:47:27 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:17:03,707 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:17:03,707 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:17:03,707 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:17:03,707 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:17:03,707 DEBUG - << cf-request-id: 02f644ef5a0000063d1b1a7200000001
+2020-05-27 11:17:03,708 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:17:03,708 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:17:03,708 DEBUG - << Server: cloudflare
+2020-05-27 11:17:03,708 DEBUG - << CF-RAY: 599d70f89d12063d-LHR
+2020-05-27 11:17:03,708 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:03,710 DEBUG - Parsing response as: application/json
+2020-05-27 11:17:03,710 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:17:03,717 DEBUG -  << "{"error":"time data '2020-13-31' does not match format '%Y-%m-%d'"}"
+2020-05-27 11:17:03,717 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3727f0ee
+2020-05-27 11:17:03,717 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:03,733 INFO  - ------------------Scenario Validate response with invalid Base Started---------------------
+2020-05-27 11:17:03,739 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:17:03,739 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:17:05,600 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:17:05,600 DEBUG - Auth cache not set in the context
+2020-05-27 11:17:05,600 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:17:05,600 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:17:05,600 DEBUG - Attempt 1 to execute request
+2020-05-27 11:17:05,600 DEBUG - Sending request: GET /api/latest?base=XYZ HTTP/1.1
+2020-05-27 11:17:05,601 DEBUG -  >> "GET /api/latest?base=XYZ HTTP/1.1[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:17:05,601 DEBUG - >> GET /api/latest?base=XYZ HTTP/1.1
+2020-05-27 11:17:05,601 DEBUG - >> Accept: */*
+2020-05-27 11:17:05,602 DEBUG - >> Content-Length: 0
+2020-05-27 11:17:05,602 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:17:05,602 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:17:05,602 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:17:05,602 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:17:10,355 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Date: Wed, 27 May 2020 05:47:31 GMT[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Content-Length: 40[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Set-Cookie: __cfduid=d69e5f18a42c1a4dd499028629af0dc611590558450; expires=Fri, 26-Jun-20 05:47:30 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "cf-request-id: 02f644f997000006bd4f852200000001[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "CF-RAY: 599d7108f84306bd-LHR[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:10,356 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:17:10,356 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:17:10,356 DEBUG - << Date: Wed, 27 May 2020 05:47:31 GMT
+2020-05-27 11:17:10,356 DEBUG - << Content-Type: application/json
+2020-05-27 11:17:10,356 DEBUG - << Content-Length: 40
+2020-05-27 11:17:10,356 DEBUG - << Connection: keep-alive
+2020-05-27 11:17:10,356 DEBUG - << Set-Cookie: __cfduid=d69e5f18a42c1a4dd499028629af0dc611590558450; expires=Fri, 26-Jun-20 05:47:30 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:17:10,356 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:17:10,356 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:17:10,356 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:17:10,356 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:17:10,356 DEBUG - << cf-request-id: 02f644f997000006bd4f852200000001
+2020-05-27 11:17:10,356 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:17:10,357 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:17:10,357 DEBUG - << Server: cloudflare
+2020-05-27 11:17:10,357 DEBUG - << CF-RAY: 599d7108f84306bd-LHR
+2020-05-27 11:17:10,357 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:10,357 DEBUG - Parsing response as: application/json
+2020-05-27 11:17:10,357 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:17:10,360 DEBUG -  << "{"error":"Base 'XYZ' is not supported."}"
+2020-05-27 11:17:10,360 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@49ede9c7
+2020-05-27 11:17:10,360 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:10,382 INFO  - ------------------Scenario Validate response with invalid Symbol Started---------------------
+2020-05-27 11:17:10,390 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:17:10,390 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:17:12,000 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:17:12,001 DEBUG - Auth cache not set in the context
+2020-05-27 11:17:12,001 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:17:12,001 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:17:12,001 DEBUG - Attempt 1 to execute request
+2020-05-27 11:17:12,001 DEBUG - Sending request: GET /api/latest?symbols=XYZ HTTP/1.1
+2020-05-27 11:17:12,001 DEBUG -  >> "GET /api/latest?symbols=XYZ HTTP/1.1[\r][\n]"
+2020-05-27 11:17:12,001 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:17:12,002 DEBUG - >> GET /api/latest?symbols=XYZ HTTP/1.1
+2020-05-27 11:17:12,002 DEBUG - >> Accept: */*
+2020-05-27 11:17:12,002 DEBUG - >> Content-Length: 0
+2020-05-27 11:17:12,002 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:17:12,002 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:17:12,003 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:17:12,003 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:17:12,307 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Date: Wed, 27 May 2020 05:47:36 GMT[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Content-Length: 58[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Set-Cookie: __cfduid=d1f772d11ac78e9aa99fd6105565a57031590558456; expires=Fri, 26-Jun-20 05:47:36 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "cf-request-id: 02f645129700000726ffa20200000001[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "CF-RAY: 599d7130fad50726-LHR[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:12,307 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:17:12,307 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:17:12,307 DEBUG - << Date: Wed, 27 May 2020 05:47:36 GMT
+2020-05-27 11:17:12,307 DEBUG - << Content-Type: application/json
+2020-05-27 11:17:12,307 DEBUG - << Content-Length: 58
+2020-05-27 11:17:12,307 DEBUG - << Connection: keep-alive
+2020-05-27 11:17:12,307 DEBUG - << Set-Cookie: __cfduid=d1f772d11ac78e9aa99fd6105565a57031590558456; expires=Fri, 26-Jun-20 05:47:36 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:17:12,307 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:17:12,307 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:17:12,307 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:17:12,307 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:17:12,307 DEBUG - << cf-request-id: 02f645129700000726ffa20200000001
+2020-05-27 11:17:12,307 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:17:12,308 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:17:12,308 DEBUG - << Server: cloudflare
+2020-05-27 11:17:12,308 DEBUG - << CF-RAY: 599d7130fad50726-LHR
+2020-05-27 11:17:12,308 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:12,308 DEBUG - Parsing response as: application/json
+2020-05-27 11:17:12,308 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:17:12,309 DEBUG -  << "{"error":"Symbols 'XYZ' are invalid for date 2020-05-27."}"
+2020-05-27 11:17:12,310 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@49c675f0
+2020-05-27 11:17:12,310 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:12,321 INFO  - ------------------Scenario Validate Api response for the date below the data present Started---------------------
+2020-05-27 11:17:12,326 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:17:12,327 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:17:13,592 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:17:13,592 DEBUG - Auth cache not set in the context
+2020-05-27 11:17:13,592 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:17:13,592 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:17:13,592 DEBUG - Attempt 1 to execute request
+2020-05-27 11:17:13,592 DEBUG - Sending request: GET /api/1990-01-12 HTTP/1.1
+2020-05-27 11:17:13,592 DEBUG -  >> "GET /api/1990-01-12 HTTP/1.1[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:17:13,592 DEBUG - >> GET /api/1990-01-12 HTTP/1.1
+2020-05-27 11:17:13,592 DEBUG - >> Accept: */*
+2020-05-27 11:17:13,592 DEBUG - >> Content-Length: 0
+2020-05-27 11:17:13,592 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:17:13,592 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:17:13,592 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:17:13,592 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:17:13,829 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Date: Wed, 27 May 2020 05:47:38 GMT[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Content-Length: 61[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Set-Cookie: __cfduid=d3e1e2a6e0c66bebba6aa9705622f17cc1590558458; expires=Fri, 26-Jun-20 05:47:38 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "cf-request-id: 02f64518d3000006dd0f0b6200000001[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "CF-RAY: 599d713aeb0c06dd-LHR[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG -  << "[\r][\n]"
+2020-05-27 11:17:13,829 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:17:13,829 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:17:13,829 DEBUG - << Date: Wed, 27 May 2020 05:47:38 GMT
+2020-05-27 11:17:13,829 DEBUG - << Content-Type: application/json
+2020-05-27 11:17:13,829 DEBUG - << Content-Length: 61
+2020-05-27 11:17:13,829 DEBUG - << Connection: keep-alive
+2020-05-27 11:17:13,829 DEBUG - << Set-Cookie: __cfduid=d3e1e2a6e0c66bebba6aa9705622f17cc1590558458; expires=Fri, 26-Jun-20 05:47:38 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:17:13,829 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:17:13,829 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:17:13,829 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:17:13,829 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:17:13,829 DEBUG - << cf-request-id: 02f64518d3000006dd0f0b6200000001
+2020-05-27 11:17:13,829 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:17:13,829 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:17:13,829 DEBUG - << Server: cloudflare
+2020-05-27 11:17:13,829 DEBUG - << CF-RAY: 599d713aeb0c06dd-LHR
+2020-05-27 11:17:13,829 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:13,829 DEBUG - Parsing response as: application/json
+2020-05-27 11:17:13,829 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:17:13,830 DEBUG -  << "{"error":"There is no data for dates older then 1999-01-04."}"
+2020-05-27 11:17:13,830 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7e7f0216
+2020-05-27 11:17:13,830 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:17:13,849 DEBUG - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,849 DEBUG - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-05-27 11:17:13,850 DEBUG - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-05-27 11:17:13,850 DEBUG - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-05-27 11:17:13,944 DEBUG - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,944 DEBUG - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-05-27 11:17:13,944 DEBUG - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-05-27 11:17:13,944 DEBUG - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-05-27 11:17:13,953 DEBUG - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,953 DEBUG - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-05-27 11:17:13,953 DEBUG - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-05-27 11:17:13,953 DEBUG - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-05-27 11:17:13,957 DEBUG - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,958 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-05-27 11:17:13,958 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-05-27 11:17:13,958 DEBUG - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-05-27 11:17:13,966 DEBUG - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,966 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-05-27 11:17:13,966 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-05-27 11:17:13,966 DEBUG - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-05-27 11:17:13,973 DEBUG - Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,973 DEBUG - TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+2020-05-27 11:17:13,973 DEBUG - TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+2020-05-27 11:17:13,973 DEBUG - Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+2020-05-27 11:17:13,990 DEBUG - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,990 DEBUG - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-05-27 11:17:13,991 DEBUG - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-05-27 11:17:13,991 DEBUG - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-05-27 11:17:13,995 DEBUG - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,996 DEBUG - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-05-27 11:17:13,996 DEBUG - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-05-27 11:17:13,996 DEBUG - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-05-27 11:17:13,999 DEBUG - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:13,999 DEBUG - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-05-27 11:17:13,999 DEBUG - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-05-27 11:17:13,999 DEBUG - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-05-27 11:17:14,002 DEBUG - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:14,002 DEBUG - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-05-27 11:17:14,002 DEBUG - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-05-27 11:17:14,002 DEBUG - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-05-27 11:17:14,006 DEBUG - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:17:14,006 DEBUG - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-05-27 11:17:14,007 DEBUG - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-05-27 11:17:14,007 DEBUG - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
+2020-05-27 11:20:36,917 INFO  - ------------------Scenario "Check the latest foreign exchange rates" Started---------------------
+2020-05-27 11:20:37,840 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:37,865 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:38,716 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:38,717 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:38,717 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:38,718 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:38,718 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:38,718 DEBUG - Sending request: GET /api/latest HTTP/1.1
+2020-05-27 11:20:38,718 DEBUG -  >> "GET /api/latest HTTP/1.1[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:38,719 DEBUG - >> GET /api/latest HTTP/1.1
+2020-05-27 11:20:38,719 DEBUG - >> Accept: */*
+2020-05-27 11:20:38,719 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:38,720 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:38,720 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:38,720 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:38,720 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:38,910 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Date: Wed, 27 May 2020 05:51:03 GMT[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Set-Cookie: __cfduid=d18ced018e9b27a8efad70a20c996a2ed1590558663; expires=Fri, 26-Jun-20 05:51:03 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:38,911 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:20:38,912 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:20:38,912 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:20:38,912 DEBUG -  << "Age: 3780[\r][\n]"
+2020-05-27 11:20:38,912 DEBUG -  << "cf-request-id: 02f6483a2d00000652740cb200000001[\r][\n]"
+2020-05-27 11:20:38,913 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:38,913 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:38,913 DEBUG -  << "CF-RAY: 599d763d1f290652-LHR[\r][\n]"
+2020-05-27 11:20:38,913 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:38,914 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:20:38,914 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:20:38,914 DEBUG - << Date: Wed, 27 May 2020 05:51:03 GMT
+2020-05-27 11:20:38,914 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:38,914 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:20:38,914 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:38,914 DEBUG - << Set-Cookie: __cfduid=d18ced018e9b27a8efad70a20c996a2ed1590558663; expires=Fri, 26-Jun-20 05:51:03 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:38,914 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:38,914 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:38,914 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:38,914 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:38,914 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:20:38,914 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:20:38,914 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:20:38,914 DEBUG - << Age: 3780
+2020-05-27 11:20:38,914 DEBUG - << cf-request-id: 02f6483a2d00000652740cb200000001
+2020-05-27 11:20:38,914 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:38,914 DEBUG - << Server: cloudflare
+2020-05-27 11:20:38,914 DEBUG - << CF-RAY: 599d763d1f290652-LHR
+2020-05-27 11:20:38,918 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:38,929 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:38,929 DEBUG -  << "13d[\r][\n]"
+2020-05-27 11:20:38,929 DEBUG -  << "[0x1f]"
+2020-05-27 11:20:38,929 DEBUG -  << "[0x8b]"
+2020-05-27 11:20:38,929 DEBUG -  << "[0x8]"
+2020-05-27 11:20:38,929 DEBUG -  << "[0x0]"
+2020-05-27 11:20:38,929 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:20:38,929 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:38,962 INFO  - ------------------Scenario "Check the latest foreign exchange rates" Ends---------------------
+2020-05-27 11:20:38,966 INFO  - ------------------Scenario "Validate the foreign exchange rate for past date" Started---------------------
+2020-05-27 11:20:38,972 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:38,972 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:39,621 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:39,621 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:39,621 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:39,621 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:39,621 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:39,622 DEBUG - Sending request: GET /api/2010-01-12 HTTP/1.1
+2020-05-27 11:20:39,622 DEBUG -  >> "GET /api/2010-01-12 HTTP/1.1[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:39,622 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:39,623 DEBUG - >> GET /api/2010-01-12 HTTP/1.1
+2020-05-27 11:20:39,623 DEBUG - >> Accept: */*
+2020-05-27 11:20:39,623 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:39,623 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:39,623 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:39,623 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:39,623 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:39,781 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Date: Wed, 27 May 2020 05:51:04 GMT[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Set-Cookie: __cfduid=d9e00a7a3229d54c0a845deec7ae5269c1590558664; expires=Fri, 26-Jun-20 05:51:04 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Age: 6069[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "cf-request-id: 02f6483d9e000007561bb2c200000001[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "CF-RAY: 599d76429aee0756-LHR[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:39,782 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:20:39,782 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:20:39,783 DEBUG - << Date: Wed, 27 May 2020 05:51:04 GMT
+2020-05-27 11:20:39,783 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:39,783 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:20:39,783 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:39,783 DEBUG - << Set-Cookie: __cfduid=d9e00a7a3229d54c0a845deec7ae5269c1590558664; expires=Fri, 26-Jun-20 05:51:04 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:39,783 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:39,783 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:39,783 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:39,783 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:39,783 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:20:39,783 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:20:39,783 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:20:39,783 DEBUG - << Age: 6069
+2020-05-27 11:20:39,783 DEBUG - << cf-request-id: 02f6483d9e000007561bb2c200000001
+2020-05-27 11:20:39,783 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:39,783 DEBUG - << Server: cloudflare
+2020-05-27 11:20:39,783 DEBUG - << CF-RAY: 599d76429aee0756-LHR
+2020-05-27 11:20:39,783 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:39,783 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:39,784 DEBUG -  << "14b[\r][\n]"
+2020-05-27 11:20:39,784 DEBUG -  << "[0x1f]"
+2020-05-27 11:20:39,784 DEBUG -  << "[0x8b]"
+2020-05-27 11:20:39,784 DEBUG -  << "[0x8]"
+2020-05-27 11:20:39,784 DEBUG -  << "[0x0]"
+2020-05-27 11:20:39,784 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:20:39,784 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:39,786 INFO  - ------------------Scenario "Validate the foreign exchange rate for past date" Ends---------------------
+2020-05-27 11:20:39,790 INFO  - ------------------Scenario "Validate latest foreign exchange rates with base and symbol" Started---------------------
+2020-05-27 11:20:39,800 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:39,800 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:40,412 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:40,412 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:40,412 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:40,412 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:40,413 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:40,413 DEBUG - Sending request: GET /api/latest?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:20:40,413 DEBUG -  >> "GET /api/latest?base=USD&symbols=EUR HTTP/1.1[\r][\n]"
+2020-05-27 11:20:40,414 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:40,414 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:40,414 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:40,414 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:40,414 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:40,415 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:40,415 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:40,415 DEBUG - >> GET /api/latest?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:20:40,415 DEBUG - >> Accept: */*
+2020-05-27 11:20:40,415 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:40,415 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:40,416 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:40,416 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:40,416 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:40,567 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Date: Wed, 27 May 2020 05:51:04 GMT[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Set-Cookie: __cfduid=db6c900d029b908bc0196eb72cc3018061590558664; expires=Fri, 26-Jun-20 05:51:04 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:40,568 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "Age: 6068[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "cf-request-id: 02f64840b60000dbdb241bc200000001[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "CF-RAY: 599d76478bc8dbdb-LHR[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:20:40,569 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:40,570 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:20:40,570 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:20:40,570 DEBUG - << Date: Wed, 27 May 2020 05:51:04 GMT
+2020-05-27 11:20:40,570 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:40,570 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:20:40,570 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:40,570 DEBUG - << Set-Cookie: __cfduid=db6c900d029b908bc0196eb72cc3018061590558664; expires=Fri, 26-Jun-20 05:51:04 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:40,570 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:40,570 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:40,570 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:40,570 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:20:40,570 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:20:40,570 DEBUG - << Age: 6068
+2020-05-27 11:20:40,570 DEBUG - << cf-request-id: 02f64840b60000dbdb241bc200000001
+2020-05-27 11:20:40,570 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:40,570 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:40,570 DEBUG - << Server: cloudflare
+2020-05-27 11:20:40,571 DEBUG - << CF-RAY: 599d76478bc8dbdb-LHR
+2020-05-27 11:20:40,571 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:20:40,571 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:40,571 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:40,571 DEBUG -  << "51[\r][\n]"
+2020-05-27 11:20:40,571 DEBUG -  << "[0x1f]"
+2020-05-27 11:20:40,571 DEBUG -  << "[0x8b]"
+2020-05-27 11:20:40,571 DEBUG -  << "[0x8]"
+2020-05-27 11:20:40,572 DEBUG -  << "[0x0]"
+2020-05-27 11:20:40,572 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:20:40,572 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:40,576 INFO  - ------------------Scenario "Validate latest foreign exchange rates with base and symbol" Ends---------------------
+2020-05-27 11:20:40,581 INFO  - ------------------Scenario "Validate latest foreign exchange rates with base and symbol" Started---------------------
+2020-05-27 11:20:40,591 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:40,591 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:41,611 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:41,611 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:41,611 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:41,611 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:41,611 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:41,611 DEBUG - Sending request: GET /api/latest?base=INR&symbols=INR HTTP/1.1
+2020-05-27 11:20:41,612 DEBUG -  >> "GET /api/latest?base=INR&symbols=INR HTTP/1.1[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:41,612 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:41,613 DEBUG - >> GET /api/latest?base=INR&symbols=INR HTTP/1.1
+2020-05-27 11:20:41,613 DEBUG - >> Accept: */*
+2020-05-27 11:20:41,613 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:41,613 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:41,613 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:41,613 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:41,613 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:42,434 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:20:42,435 DEBUG -  << "Date: Wed, 27 May 2020 05:51:06 GMT[\r][\n]"
+2020-05-27 11:20:42,435 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:42,435 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:20:42,435 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:42,435 DEBUG -  << "Set-Cookie: __cfduid=daf1d3f3f37fe35fd1bca04908d46ecf41590558666; expires=Fri, 26-Jun-20 05:51:06 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:42,436 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:42,436 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:42,436 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:42,436 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:20:42,436 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:20:42,436 DEBUG -  << "Age: 6069[\r][\n]"
+2020-05-27 11:20:42,437 DEBUG -  << "cf-request-id: 02f64845620000dc2b70166200000001[\r][\n]"
+2020-05-27 11:20:42,437 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:42,437 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:42,437 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:42,437 DEBUG -  << "CF-RAY: 599d764f0f18dc2b-LHR[\r][\n]"
+2020-05-27 11:20:42,438 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:20:42,438 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:42,438 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:20:42,438 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:20:42,438 DEBUG - << Date: Wed, 27 May 2020 05:51:06 GMT
+2020-05-27 11:20:42,438 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:42,439 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:20:42,439 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:42,439 DEBUG - << Set-Cookie: __cfduid=daf1d3f3f37fe35fd1bca04908d46ecf41590558666; expires=Fri, 26-Jun-20 05:51:06 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:42,439 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:42,439 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:42,439 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:42,439 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:20:42,440 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:20:42,440 DEBUG - << Age: 6069
+2020-05-27 11:20:42,440 DEBUG - << cf-request-id: 02f64845620000dc2b70166200000001
+2020-05-27 11:20:42,440 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:42,440 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:42,440 DEBUG - << Server: cloudflare
+2020-05-27 11:20:42,440 DEBUG - << CF-RAY: 599d764f0f18dc2b-LHR
+2020-05-27 11:20:42,440 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:20:42,440 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:42,440 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:42,440 DEBUG -  << "44[\r][\n]"
+2020-05-27 11:20:42,440 DEBUG -  << "[0x1f]"
+2020-05-27 11:20:42,440 DEBUG -  << "[0x8b]"
+2020-05-27 11:20:42,440 DEBUG -  << "[0x8]"
+2020-05-27 11:20:42,440 DEBUG -  << "[0x0]"
+2020-05-27 11:20:42,440 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:20:42,440 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:42,443 INFO  - ------------------Scenario "Validate latest foreign exchange rates with base and symbol" Ends---------------------
+2020-05-27 11:20:42,448 INFO  - ------------------Scenario "Validate the foreign exchange rate with base and symbol for past date" Started---------------------
+2020-05-27 11:20:42,454 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:42,454 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:44,106 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:44,107 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:44,107 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:44,107 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:44,107 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:44,108 DEBUG - Sending request: GET /api/2010-01-12?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:20:44,108 DEBUG -  >> "GET /api/2010-01-12?base=USD&symbols=EUR HTTP/1.1[\r][\n]"
+2020-05-27 11:20:44,108 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:44,108 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:44,109 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:44,109 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:44,109 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:44,109 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:44,109 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:44,109 DEBUG - >> GET /api/2010-01-12?base=USD&symbols=EUR HTTP/1.1
+2020-05-27 11:20:44,110 DEBUG - >> Accept: */*
+2020-05-27 11:20:44,110 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:44,110 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:44,110 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:44,110 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:44,110 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:44,369 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:20:44,369 DEBUG -  << "Date: Wed, 27 May 2020 05:51:08 GMT[\r][\n]"
+2020-05-27 11:20:44,369 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Set-Cookie: __cfduid=df0b13524377fa0278b5f9d7559541b701590558668; expires=Fri, 26-Jun-20 05:51:08 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "Age: 6070[\r][\n]"
+2020-05-27 11:20:44,370 DEBUG -  << "cf-request-id: 02f6484f200000dc1706a90200000001[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG -  << "CF-RAY: 599d765e9c9bdc17-LHR[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:44,371 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:20:44,371 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:20:44,371 DEBUG - << Date: Wed, 27 May 2020 05:51:08 GMT
+2020-05-27 11:20:44,371 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:44,371 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:20:44,371 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:44,372 DEBUG - << Set-Cookie: __cfduid=df0b13524377fa0278b5f9d7559541b701590558668; expires=Fri, 26-Jun-20 05:51:08 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:44,372 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:44,372 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:44,372 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:44,372 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:20:44,372 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:20:44,372 DEBUG - << Age: 6070
+2020-05-27 11:20:44,372 DEBUG - << cf-request-id: 02f6484f200000dc1706a90200000001
+2020-05-27 11:20:44,372 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:44,372 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:44,372 DEBUG - << Server: cloudflare
+2020-05-27 11:20:44,372 DEBUG - << CF-RAY: 599d765e9c9bdc17-LHR
+2020-05-27 11:20:44,372 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:20:44,373 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:44,373 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:44,373 DEBUG -  << "51[\r][\n]"
+2020-05-27 11:20:44,374 DEBUG -  << "[0x1f]"
+2020-05-27 11:20:44,374 DEBUG -  << "[0x8b]"
+2020-05-27 11:20:44,374 DEBUG -  << "[0x8]"
+2020-05-27 11:20:44,374 DEBUG -  << "[0x0]"
+2020-05-27 11:20:44,374 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:20:44,374 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:44,407 DEBUG -  << "[0xab]VJJ,NU[0xb2]R[\n]"
+2020-05-27 11:20:44,408 DEBUG -  << "[\r]vQ[0xd2]Q*J,I-V[0xb2][0xaa]Vr[\r][\r]R[0xb2]2[0xd0]3[0xb3]40530011[0xaa][0xd5]QJI,[0x1][0xa9]4204[0xd0]50[0xd4]54R[0xaa][0x5][0x0]~UUs?[0x0][0x0][0x0]"
+2020-05-27 11:20:44,408 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:44,408 DEBUG -  << "0[\r][\n]"
+2020-05-27 11:20:44,409 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:44,409 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@bc0f53b
+2020-05-27 11:20:44,409 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:44,467 INFO  - ------------------Scenario "Validate the foreign exchange rate with base and symbol for past date" Ends---------------------
+2020-05-27 11:20:44,471 INFO  - ------------------Scenario "Validate the foreign exchange rate with base and symbol for past date" Started---------------------
+2020-05-27 11:20:44,477 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:44,478 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:46,497 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:46,497 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:46,497 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:46,497 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:46,497 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:46,497 DEBUG - Sending request: GET /api/2009-01-03?base=INR&symbols=USD HTTP/1.1
+2020-05-27 11:20:46,497 DEBUG -  >> "GET /api/2009-01-03?base=INR&symbols=USD HTTP/1.1[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:46,497 DEBUG - >> GET /api/2009-01-03?base=INR&symbols=USD HTTP/1.1
+2020-05-27 11:20:46,497 DEBUG - >> Accept: */*
+2020-05-27 11:20:46,497 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:46,497 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:46,497 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:46,497 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:46,497 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:46,939 DEBUG -  << "HTTP/1.1 200 OK[\r][\n]"
+2020-05-27 11:20:46,939 DEBUG -  << "Date: Wed, 27 May 2020 05:51:10 GMT[\r][\n]"
+2020-05-27 11:20:46,939 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Transfer-Encoding: chunked[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Set-Cookie: __cfduid=dcfa5be3ec1c6381c5c7b70173b525d5c1590558670; expires=Fri, 26-Jun-20 05:51:10 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Cache-Control: max-age=14400[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "CF-Cache-Status: HIT[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Age: 6072[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "cf-request-id: 02f64858770000ce8f502fb200000001[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "CF-RAY: 599d766d8c55ce8f-LHR[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "Content-Encoding: gzip[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:46,940 DEBUG - Receiving response: HTTP/1.1 200 OK
+2020-05-27 11:20:46,940 DEBUG - << HTTP/1.1 200 OK
+2020-05-27 11:20:46,940 DEBUG - << Date: Wed, 27 May 2020 05:51:10 GMT
+2020-05-27 11:20:46,940 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:46,940 DEBUG - << Transfer-Encoding: chunked
+2020-05-27 11:20:46,940 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:46,940 DEBUG - << Set-Cookie: __cfduid=dcfa5be3ec1c6381c5c7b70173b525d5c1590558670; expires=Fri, 26-Jun-20 05:51:10 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:46,940 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:46,940 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:46,940 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:46,940 DEBUG - << Cache-Control: max-age=14400
+2020-05-27 11:20:46,940 DEBUG - << CF-Cache-Status: HIT
+2020-05-27 11:20:46,940 DEBUG - << Age: 6072
+2020-05-27 11:20:46,940 DEBUG - << cf-request-id: 02f64858770000ce8f502fb200000001
+2020-05-27 11:20:46,940 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:46,940 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:46,940 DEBUG - << Server: cloudflare
+2020-05-27 11:20:46,940 DEBUG - << CF-RAY: 599d766d8c55ce8f-LHR
+2020-05-27 11:20:46,940 DEBUG - << Content-Encoding: gzip
+2020-05-27 11:20:46,940 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:46,941 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:46,941 DEBUG -  << "51[\r][\n]"
+2020-05-27 11:20:46,941 DEBUG -  << "[0x1f]"
+2020-05-27 11:20:46,941 DEBUG -  << "[0x8b]"
+2020-05-27 11:20:46,941 DEBUG -  << "[0x8]"
+2020-05-27 11:20:46,941 DEBUG -  << "[0x0]"
+2020-05-27 11:20:46,941 DEBUG -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+2020-05-27 11:20:46,941 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:46,943 DEBUG -  << "[0xab]VJJ,NU[0xb2]R[0xf2][0xf4][0xb]R[0xd2]Q*J,I-V[0xb2][0xaa]V[\n]"
+2020-05-27 11:20:46,943 DEBUG -  << "[\r]vQ[0xb2]2[0xd0]302035[0xb3][0xb4]06[0xaa][0xd5]QJI,[0x1][0xa9]420[0xb0][0xd4]50[0xd4]50R[0xaa][0x5][0x0][0xeb][0x1b][0xbe][0x9e]?[0x0][0x0][0x0]"
+2020-05-27 11:20:46,943 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:46,943 DEBUG -  << "0[\r][\n]"
+2020-05-27 11:20:46,944 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:46,944 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@64a9d48c
+2020-05-27 11:20:46,944 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:46,945 INFO  - ------------------Scenario "Validate the foreign exchange rate with base and symbol for past date" Ends---------------------
+2020-05-27 11:20:46,949 INFO  - ------------------Scenario "Validate Api response for the invalid day" Started---------------------
+2020-05-27 11:20:46,954 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:46,954 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:48,699 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:48,699 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:48,700 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:48,700 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:48,700 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:48,700 DEBUG - Sending request: GET /api/2020-02-31 HTTP/1.1
+2020-05-27 11:20:48,700 DEBUG -  >> "GET /api/2020-02-31 HTTP/1.1[\r][\n]"
+2020-05-27 11:20:48,700 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:48,701 DEBUG - >> GET /api/2020-02-31 HTTP/1.1
+2020-05-27 11:20:48,701 DEBUG - >> Accept: */*
+2020-05-27 11:20:48,702 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:48,702 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:48,702 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:48,702 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:48,702 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:49,083 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:20:49,084 DEBUG -  << "Date: Wed, 27 May 2020 05:51:13 GMT[\r][\n]"
+2020-05-27 11:20:49,084 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:49,084 DEBUG -  << "Content-Length: 41[\r][\n]"
+2020-05-27 11:20:49,084 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Set-Cookie: __cfduid=d376107a687b072e782a9ae6f94d230821590558673; expires=Fri, 26-Jun-20 05:51:13 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "cf-request-id: 02f64861720000068a2c080200000001[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:49,085 DEBUG -  << "CF-RAY: 599d767be95c068a-LHR[\r][\n]"
+2020-05-27 11:20:49,086 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:49,086 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:20:49,086 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:20:49,086 DEBUG - << Date: Wed, 27 May 2020 05:51:13 GMT
+2020-05-27 11:20:49,086 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:49,086 DEBUG - << Content-Length: 41
+2020-05-27 11:20:49,086 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:49,086 DEBUG - << Set-Cookie: __cfduid=d376107a687b072e782a9ae6f94d230821590558673; expires=Fri, 26-Jun-20 05:51:13 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:49,086 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:49,086 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:49,086 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:49,086 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:20:49,086 DEBUG - << cf-request-id: 02f64861720000068a2c080200000001
+2020-05-27 11:20:49,087 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:49,087 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:49,087 DEBUG - << Server: cloudflare
+2020-05-27 11:20:49,087 DEBUG - << CF-RAY: 599d767be95c068a-LHR
+2020-05-27 11:20:49,088 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:49,088 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:49,089 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:49,094 DEBUG -  << "{"error":"day is out of range for month"}"
+2020-05-27 11:20:49,094 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@36b310aa
+2020-05-27 11:20:49,094 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:49,306 INFO  - ------------------Scenario "Validate Api response for the invalid day" Ends---------------------
+2020-05-27 11:20:49,310 INFO  - ------------------Scenario "Validate Api response for the invalid month" Started---------------------
+2020-05-27 11:20:49,318 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:49,318 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:51,025 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:51,025 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:51,025 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:51,025 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:51,025 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:51,025 DEBUG - Sending request: GET /api/2020-13-31 HTTP/1.1
+2020-05-27 11:20:51,025 DEBUG -  >> "GET /api/2020-13-31 HTTP/1.1[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:51,025 DEBUG - >> GET /api/2020-13-31 HTTP/1.1
+2020-05-27 11:20:51,025 DEBUG - >> Accept: */*
+2020-05-27 11:20:51,025 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:51,025 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:51,025 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:51,025 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:51,025 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:51,516 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Date: Wed, 27 May 2020 05:51:15 GMT[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Content-Length: 67[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Set-Cookie: __cfduid=dbbacbab736d2ee81decbf5335d99e35c1590558675; expires=Fri, 26-Jun-20 05:51:15 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:51,516 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "cf-request-id: 02f6486a490000e69452b7e200000001[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "CF-RAY: 599d768a09f6e694-LHR[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:51,517 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:20:51,517 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:20:51,517 DEBUG - << Date: Wed, 27 May 2020 05:51:15 GMT
+2020-05-27 11:20:51,517 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:51,517 DEBUG - << Content-Length: 67
+2020-05-27 11:20:51,517 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:51,517 DEBUG - << Set-Cookie: __cfduid=dbbacbab736d2ee81decbf5335d99e35c1590558675; expires=Fri, 26-Jun-20 05:51:15 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:51,517 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:51,518 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:51,518 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:51,518 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:20:51,518 DEBUG - << cf-request-id: 02f6486a490000e69452b7e200000001
+2020-05-27 11:20:51,518 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:51,518 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:51,518 DEBUG - << Server: cloudflare
+2020-05-27 11:20:51,518 DEBUG - << CF-RAY: 599d768a09f6e694-LHR
+2020-05-27 11:20:51,518 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:51,519 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:51,519 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:51,522 DEBUG -  << "{"error":"time data '2020-13-31' does not match format '%Y-%m-%d'"}"
+2020-05-27 11:20:51,522 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1bc776b7
+2020-05-27 11:20:51,522 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:51,528 INFO  - ------------------Scenario "Validate Api response for the invalid month" Ends---------------------
+2020-05-27 11:20:51,531 INFO  - ------------------Scenario "Validate response with invalid Base" Started---------------------
+2020-05-27 11:20:51,536 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:51,536 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:52,949 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:52,949 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:52,949 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:52,949 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:52,949 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:52,949 DEBUG - Sending request: GET /api/latest?base=XYZ HTTP/1.1
+2020-05-27 11:20:52,949 DEBUG -  >> "GET /api/latest?base=XYZ HTTP/1.1[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:52,950 DEBUG - >> GET /api/latest?base=XYZ HTTP/1.1
+2020-05-27 11:20:52,950 DEBUG - >> Accept: */*
+2020-05-27 11:20:52,950 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:52,950 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:52,950 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:52,950 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:52,950 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:54,000 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:20:54,000 DEBUG -  << "Date: Wed, 27 May 2020 05:51:17 GMT[\r][\n]"
+2020-05-27 11:20:54,000 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:54,000 DEBUG -  << "Content-Length: 40[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Set-Cookie: __cfduid=d0737ef1ef6ac73da561873aab9dd3e8c1590558677; expires=Fri, 26-Jun-20 05:51:17 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "cf-request-id: 02f64871dc000006d1f989a200000001[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "CF-RAY: 599d76962dce06d1-LHR[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:54,001 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:20:54,001 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:20:54,001 DEBUG - << Date: Wed, 27 May 2020 05:51:17 GMT
+2020-05-27 11:20:54,001 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:54,001 DEBUG - << Content-Length: 40
+2020-05-27 11:20:54,001 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:54,001 DEBUG - << Set-Cookie: __cfduid=d0737ef1ef6ac73da561873aab9dd3e8c1590558677; expires=Fri, 26-Jun-20 05:51:17 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:54,001 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:54,001 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:54,001 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:54,001 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:20:54,001 DEBUG - << cf-request-id: 02f64871dc000006d1f989a200000001
+2020-05-27 11:20:54,001 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:54,001 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:54,001 DEBUG - << Server: cloudflare
+2020-05-27 11:20:54,001 DEBUG - << CF-RAY: 599d76962dce06d1-LHR
+2020-05-27 11:20:54,001 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:54,001 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:54,001 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:54,003 DEBUG -  << "{"error":"Base 'XYZ' is not supported."}"
+2020-05-27 11:20:54,003 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6cfd9a54
+2020-05-27 11:20:54,003 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:54,009 INFO  - ------------------Scenario "Validate response with invalid Base" Ends---------------------
+2020-05-27 11:20:54,011 INFO  - ------------------Scenario "Validate response with invalid Symbol" Started---------------------
+2020-05-27 11:20:54,017 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:54,017 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:57,447 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:57,447 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:57,447 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:57,447 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:57,447 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:57,447 DEBUG - Sending request: GET /api/latest?symbols=XYZ HTTP/1.1
+2020-05-27 11:20:57,447 DEBUG -  >> "GET /api/latest?symbols=XYZ HTTP/1.1[\r][\n]"
+2020-05-27 11:20:57,447 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:57,448 DEBUG - >> GET /api/latest?symbols=XYZ HTTP/1.1
+2020-05-27 11:20:57,448 DEBUG - >> Accept: */*
+2020-05-27 11:20:57,448 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:57,448 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:57,448 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:57,448 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:57,448 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:20:57,906 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:20:57,906 DEBUG -  << "Date: Wed, 27 May 2020 05:51:22 GMT[\r][\n]"
+2020-05-27 11:20:57,906 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:20:57,906 DEBUG -  << "Content-Length: 58[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Set-Cookie: __cfduid=d61c2daf12c89f8ac791a22c78c071b921590558681; expires=Fri, 26-Jun-20 05:51:21 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "cf-request-id: 02f64883410000dbf7e4874200000001[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "CF-RAY: 599d76b20972dbf7-LHR[\r][\n]"
+2020-05-27 11:20:57,907 DEBUG -  << "[\r][\n]"
+2020-05-27 11:20:57,908 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:20:57,908 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:20:57,908 DEBUG - << Date: Wed, 27 May 2020 05:51:22 GMT
+2020-05-27 11:20:57,908 DEBUG - << Content-Type: application/json
+2020-05-27 11:20:57,908 DEBUG - << Content-Length: 58
+2020-05-27 11:20:57,908 DEBUG - << Connection: keep-alive
+2020-05-27 11:20:57,908 DEBUG - << Set-Cookie: __cfduid=d61c2daf12c89f8ac791a22c78c071b921590558681; expires=Fri, 26-Jun-20 05:51:21 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:20:57,908 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:20:57,908 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:20:57,908 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:20:57,908 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:20:57,908 DEBUG - << cf-request-id: 02f64883410000dbf7e4874200000001
+2020-05-27 11:20:57,908 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:20:57,909 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:20:57,909 DEBUG - << Server: cloudflare
+2020-05-27 11:20:57,909 DEBUG - << CF-RAY: 599d76b20972dbf7-LHR
+2020-05-27 11:20:57,909 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:57,910 DEBUG - Parsing response as: application/json
+2020-05-27 11:20:57,910 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:20:57,912 DEBUG -  << "{"error":"Symbols 'XYZ' are invalid for date 2020-05-27."}"
+2020-05-27 11:20:57,912 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@68d651f2
+2020-05-27 11:20:57,912 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:20:57,919 INFO  - ------------------Scenario "Validate response with invalid Symbol" Ends---------------------
+2020-05-27 11:20:57,922 INFO  - ------------------Scenario "Validate Api response for the date below the data present" Started---------------------
+2020-05-27 11:20:57,927 DEBUG - Get connection for route {s}->https://api.ratesapi.io:443
+2020-05-27 11:20:57,927 DEBUG - Connecting to api.ratesapi.io:443
+2020-05-27 11:20:59,227 DEBUG - CookieSpec selected: ignoreCookies
+2020-05-27 11:20:59,228 DEBUG - Auth cache not set in the context
+2020-05-27 11:20:59,228 DEBUG - Target auth state: UNCHALLENGED
+2020-05-27 11:20:59,228 DEBUG - Proxy auth state: UNCHALLENGED
+2020-05-27 11:20:59,228 DEBUG - Attempt 1 to execute request
+2020-05-27 11:20:59,228 DEBUG - Sending request: GET /api/1990-01-12 HTTP/1.1
+2020-05-27 11:20:59,228 DEBUG -  >> "GET /api/1990-01-12 HTTP/1.1[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "Accept: */*[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "Content-Length: 0[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "Host: api.ratesapi.io[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "Connection: Keep-Alive[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG -  >> "[\r][\n]"
+2020-05-27 11:20:59,228 DEBUG - >> GET /api/1990-01-12 HTTP/1.1
+2020-05-27 11:20:59,228 DEBUG - >> Accept: */*
+2020-05-27 11:20:59,228 DEBUG - >> Content-Length: 0
+2020-05-27 11:20:59,228 DEBUG - >> Host: api.ratesapi.io
+2020-05-27 11:20:59,228 DEBUG - >> Connection: Keep-Alive
+2020-05-27 11:20:59,228 DEBUG - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_241)
+2020-05-27 11:20:59,228 DEBUG - >> Accept-Encoding: gzip,deflate
+2020-05-27 11:21:00,395 DEBUG -  << "HTTP/1.1 400 Bad Request[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Date: Wed, 27 May 2020 05:51:23 GMT[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Content-Type: application/json[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Content-Length: 61[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Connection: keep-alive[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Set-Cookie: __cfduid=d2e337d5f5d1a7ddae7c7be81f53354421590558683; expires=Fri, 26-Jun-20 05:51:23 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Access-Control-Allow-Methods: GET[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-05-27 11:21:00,395 DEBUG -  << "CF-Cache-Status: BYPASS[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG -  << "cf-request-id: 02f6488ab00000ce2f971c9200000001[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG -  << "Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG -  << "Vary: Accept-Encoding[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG -  << "Server: cloudflare[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG -  << "CF-RAY: 599d76bdedebce2f-LHR[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG -  << "[\r][\n]"
+2020-05-27 11:21:00,396 DEBUG - Receiving response: HTTP/1.1 400 Bad Request
+2020-05-27 11:21:00,396 DEBUG - << HTTP/1.1 400 Bad Request
+2020-05-27 11:21:00,396 DEBUG - << Date: Wed, 27 May 2020 05:51:23 GMT
+2020-05-27 11:21:00,396 DEBUG - << Content-Type: application/json
+2020-05-27 11:21:00,396 DEBUG - << Content-Length: 61
+2020-05-27 11:21:00,396 DEBUG - << Connection: keep-alive
+2020-05-27 11:21:00,396 DEBUG - << Set-Cookie: __cfduid=d2e337d5f5d1a7ddae7c7be81f53354421590558683; expires=Fri, 26-Jun-20 05:51:23 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+2020-05-27 11:21:00,396 DEBUG - << Access-Control-Allow-Methods: GET
+2020-05-27 11:21:00,396 DEBUG - << Access-Control-Allow-Credentials: true
+2020-05-27 11:21:00,396 DEBUG - << Access-Control-Allow-Origin: *
+2020-05-27 11:21:00,397 DEBUG - << CF-Cache-Status: BYPASS
+2020-05-27 11:21:00,397 DEBUG - << cf-request-id: 02f6488ab00000ce2f971c9200000001
+2020-05-27 11:21:00,397 DEBUG - << Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2020-05-27 11:21:00,397 DEBUG - << Vary: Accept-Encoding
+2020-05-27 11:21:00,397 DEBUG - << Server: cloudflare
+2020-05-27 11:21:00,397 DEBUG - << CF-RAY: 599d76bdedebce2f-LHR
+2020-05-27 11:21:00,397 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:21:00,398 DEBUG - Parsing response as: application/json
+2020-05-27 11:21:00,398 DEBUG - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-05-27 11:21:00,404 DEBUG -  << "{"error":"There is no data for dates older then 1999-01-04."}"
+2020-05-27 11:21:00,404 DEBUG - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@582a764a
+2020-05-27 11:21:00,404 DEBUG - Connection can be kept alive indefinitely
+2020-05-27 11:21:00,420 INFO  - ------------------Scenario "Validate Api response for the date below the data present" Ends---------------------
+2020-05-27 11:21:00,437 DEBUG - Couldn't find template in cache for "index.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,437 DEBUG - TemplateLoader.findTemplateSource("index_en.ftl"): Not found
+2020-05-27 11:21:00,439 DEBUG - TemplateLoader.findTemplateSource("index.ftl"): Found
+2020-05-27 11:21:00,439 DEBUG - Loading template for "index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/index.ftl"
+2020-05-27 11:21:00,531 DEBUG - Couldn't find template in cache for "head.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,531 DEBUG - TemplateLoader.findTemplateSource("head_en.ftl"): Not found
+2020-05-27 11:21:00,531 DEBUG - TemplateLoader.findTemplateSource("head.ftl"): Found
+2020-05-27 11:21:00,531 DEBUG - Loading template for "head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/head.ftl"
+2020-05-27 11:21:00,540 DEBUG - Couldn't find template in cache for "nav.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,540 DEBUG - TemplateLoader.findTemplateSource("nav_en.ftl"): Not found
+2020-05-27 11:21:00,540 DEBUG - TemplateLoader.findTemplateSource("nav.ftl"): Found
+2020-05-27 11:21:00,540 DEBUG - Loading template for "nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/nav.ftl"
+2020-05-27 11:21:00,544 DEBUG - Couldn't find template in cache for "test-view/test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,544 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view_en.ftl"): Not found
+2020-05-27 11:21:00,544 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view.ftl"): Found
+2020-05-27 11:21:00,544 DEBUG - Loading template for "test-view/test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view.ftl"
+2020-05-27 11:21:00,550 DEBUG - Couldn't find template in cache for "test-view/test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,550 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view-charts_en.ftl"): Not found
+2020-05-27 11:21:00,550 DEBUG - TemplateLoader.findTemplateSource("test-view/test-view-charts.ftl"): Found
+2020-05-27 11:21:00,550 DEBUG - Loading template for "test-view/test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/test-view-charts.ftl"
+2020-05-27 11:21:00,555 DEBUG - Couldn't find template in cache for "test-view/bdd.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,555 DEBUG - TemplateLoader.findTemplateSource("test-view/bdd_en.ftl"): Not found
+2020-05-27 11:21:00,556 DEBUG - TemplateLoader.findTemplateSource("test-view/bdd.ftl"): Found
+2020-05-27 11:21:00,556 DEBUG - Loading template for "test-view/bdd.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/test-view/bdd.ftl"
+2020-05-27 11:21:00,570 DEBUG - Couldn't find template in cache for "category-view/category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,571 DEBUG - TemplateLoader.findTemplateSource("category-view/category-view_en.ftl"): Not found
+2020-05-27 11:21:00,571 DEBUG - TemplateLoader.findTemplateSource("category-view/category-view.ftl"): Found
+2020-05-27 11:21:00,571 DEBUG - Loading template for "category-view/category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/category-view/category-view.ftl"
+2020-05-27 11:21:00,576 DEBUG - Couldn't find template in cache for "author-view/author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,576 DEBUG - TemplateLoader.findTemplateSource("author-view/author-view_en.ftl"): Not found
+2020-05-27 11:21:00,576 DEBUG - TemplateLoader.findTemplateSource("author-view/author-view.ftl"): Found
+2020-05-27 11:21:00,576 DEBUG - Loading template for "author-view/author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/author-view/author-view.ftl"
+2020-05-27 11:21:00,580 DEBUG - Couldn't find template in cache for "exception-view/exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,580 DEBUG - TemplateLoader.findTemplateSource("exception-view/exception-view_en.ftl"): Not found
+2020-05-27 11:21:00,580 DEBUG - TemplateLoader.findTemplateSource("exception-view/exception-view.ftl"): Found
+2020-05-27 11:21:00,580 DEBUG - Loading template for "exception-view/exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/exception-view/exception-view.ftl"
+2020-05-27 11:21:00,583 DEBUG - Couldn't find template in cache for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,583 DEBUG - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view_en.ftl"): Not found
+2020-05-27 11:21:00,583 DEBUG - TemplateLoader.findTemplateSource("dashboard-view/dashboard-view.ftl"): Found
+2020-05-27 11:21:00,583 DEBUG - Loading template for "dashboard-view/dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/dashboard-view/dashboard-view.ftl"
+2020-05-27 11:21:00,587 DEBUG - Couldn't find template in cache for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2020-05-27 11:21:00,587 DEBUG - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view_en.ftl"): Not found
+2020-05-27 11:21:00,588 DEBUG - TemplateLoader.findTemplateSource("logs-view/testrunner-logs-view.ftl"): Found
+2020-05-27 11:21:00,588 DEBUG - Loading template for "logs-view/testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/ac736068/.m2/repository/com/aventstack/extentreports/3.1.2/extentreports-3.1.2.jar!/com/aventstack/extentreports/view/html-report/logs-view/testrunner-logs-view.ftl"
