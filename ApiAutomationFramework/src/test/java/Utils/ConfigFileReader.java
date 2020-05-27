@@ -7,6 +7,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * ConfigFileReader class has a methods which reads the Config.properties file and return the value
+ * 
+ * @author Anshul Chhajed
+ *
+ */
 public class ConfigFileReader {
 
 

@@ -1,6 +1,6 @@
-
 @RegressionSuite
-Feature: Testing Rate API
+
+Feature: Foreign Exchange Rate API
 
 @PositiveScenario
 Scenario: Check the latest foreign exchange rates

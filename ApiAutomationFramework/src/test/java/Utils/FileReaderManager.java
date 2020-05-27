@@ -3,7 +3,7 @@ package Utils;
 /**
  * FileReaderManager class is will return the Singleton object of ConfigFileReader for reading the config file
  * 
- * @author ac736068
+ * @author Anshul Chhajed
  *
  */
 public class FileReaderManager {
